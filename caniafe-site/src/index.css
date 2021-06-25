@@ -22,3 +22,7 @@ body {
   color: var(--mainBlack);
   text-align: center;
 }
+
+.carousel-container{
+  max-height: 25%;
+}
