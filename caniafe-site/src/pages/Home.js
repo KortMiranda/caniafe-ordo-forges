@@ -1,13 +1,15 @@
 import React from 'react';
+// import { Link } from 'react-router-dom'
 import MainCarousel from '../components/MainCarousel'
 
-function Home(props) {
+
+export default function Home() {
     
+
     return (
-        <div>
-            <MainCarousel />
+       <div>
+           <MainCarousel />
         </div>
     );
 }
 
-export default Home;

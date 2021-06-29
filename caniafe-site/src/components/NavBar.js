@@ -1,18 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import '../css/NavBar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import { Navbar, Nav, Container } from 'react-bootstrap'
 
-
-function NavBar(props) {
+function NavBar() {
     return (
-        <Navbar>
-        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-        <Navbar.Collapse id="basic-navbar-nav">
-            {/* <nav className="navbar"> */}
-            <Nav className="mr-auto">
+           <nav className="navbar">
                 <div className="nav-center">
                     <ul className="nav justify-content-center">
                         <li>
@@ -38,10 +31,7 @@ function NavBar(props) {
                         </li>
                     </ul>
                 </div>
-            </Nav>
-            {/* </nav> */}
-            </Navbar.Collapse>
-        </Navbar>
+            </nav>
         
     );
 }
