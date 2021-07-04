@@ -1,15 +1,35 @@
 import React from 'react';
+import { client } from '../client';
 // import { Link } from 'react-router-dom'
 import MainCarousel from '../components/MainCarousel'
+import KitOptions from '../components/KitOptions'
 
 
-export default function Home() {
+class Home extends React.Component {
+    state = {
+        articles: []
+    }
+
+    componentDidMount(){
+        client.getEntries()
+        .then((response) => {
+            console.log(response)
+            this.setState({
+                articles:response.items
+            })
+        })
+        .catch(console.error)
+    }
+    render() {
+        return (
+            <div>
+                <MainCarousel />
+                <KitOptions kits={this.state.articles} />
+             </div>
+         );
+    }
     
-
-    return (
-       <div>
-           <MainCarousel />
-        </div>
-    );
 }
+
+export default Home;
 
