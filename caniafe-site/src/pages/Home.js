@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import MainCarousel from '../components/MainCarousel'
+import ReviewCarousel from '../components/ReviewCarousel';
 
 
 
@@ -32,9 +33,9 @@ class Home extends React.Component {
                         <div className="kit-item">
                             <Link to="/store/painted-kits"><button>Explore DIY Kits</button></Link>
                         </div>
-                    </div>
-                    
+                    </div>  
                 </div>
+                <ReviewCarousel />
             </div>
          );
     }
