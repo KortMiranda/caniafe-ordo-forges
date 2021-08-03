@@ -35,7 +35,10 @@ class Home extends React.Component {
                         </div>
                     </div>  
                 </div>
+                <h3>What Clients Are Saying</h3>
                 <ReviewCarousel />
+                <h3>Let's Forge Your Dream Armor Today!</h3>
+                <Link to="/custom-order"><button>Request A Quote</button></Link>
             </div>
          );
     }
